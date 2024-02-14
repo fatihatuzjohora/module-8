@@ -1,0 +1,50 @@
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .one {
+    display: grid;
+    grid-auto-rows: 200px; /*change this  value to change the height*/
+  }
+  .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px; /*change this  value to change the height*/
+  }
+  .vertical {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 100px; /*change this  value to change the height*/
+  }
+  .vertical1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 100px; /*change this  value to change the height*/
+  }
+
+
+  
+/* resoponsive media query  */
+@media screen and ( max-width:576px){
+    .row{
+        flex-direction: column;
+        height: auto;
+    }
+    .square-collage{
+        grid-template-columns:1fr;
+    }
+}
+
+/* mediam media query  */
+@media screen and (min-width:576px) and (max-width:992px){
+    .row{
+        flex-direction: column;
+        height: auto;
+    }
+    .square-collage{
+        grid-template-columns:1fr;
+    }
+}
+
